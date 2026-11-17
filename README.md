@@ -51,6 +51,16 @@ Abre `http://127.0.0.1:8000`. Esta versión carga archivos JSON y debe abrirse m
 - `data.json`: conteos y nombres de parroquias.
 - `geography.json`: geometría del mapa.
 - `downloads/`: 23 archivos Excel, uno con todos los registros y 22 grupos según el campo parroquia.
+- `site.webmanifest`: nombre, iconos y apertura de la web al añadirla al inicio.
+- `icons/`: icono vectorial y versiones PNG de 192, 512 y 1024 píxeles, incluida la variante adaptable de Android.
+- `apple-touch-icon.png`: icono de 180 píxeles para iPhone.
+- `favicon.ico`: icono de respaldo para las pestañas del navegador.
+
+## Icono en la pantalla de inicio
+
+La casa blanca se dibuja en vector sobre fondo azul, con el contenido centrado y ampliado. Los iconos para teléfonos tienen fondo opaco y la versión adaptable mantiene la casa dentro del área segura para los recortes del sistema.
+
+Después de publicar por HTTPS, abre la URL en el teléfono y usa la opción del navegador para añadirla a la pantalla de inicio. Si ya tenías un acceso directo con el icono anterior, quítalo y añádelo de nuevo. Sube también `site.webmanifest`, `apple-touch-icon.png` y la carpeta `icons/`; el archivo `index.html` los utiliza mediante rutas relativas.
 
 ## Alcance de los datos
 
